@@ -61,7 +61,7 @@ public class PrintlnClass {
                 String currentLink = element.attr("href").replace("blob", "raw");
 
                 if (!currentLink.contains(tempLink)) {
-                    System.out.print("\n\n---\n\n");
+                    System.out.print("\n\n");
                 }
                 tempLink = getTempLink(element);
 
