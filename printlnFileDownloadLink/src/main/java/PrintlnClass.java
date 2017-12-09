@@ -57,17 +57,19 @@ public class PrintlnClass {
             Element element0 = contentTds.get(0);
             String tempLink = getTempLink(element0);
 
+
+            System.out.println("####"+element0.text());
             for (Element element : contentTds) {
                 String currentLink = element.attr("href").replace("blob", "raw");
 
                 if (!currentLink.contains(tempLink)) {
                     System.out.print("\n\n");
+                    System.out.println("####"+element.text());
                 }
                 tempLink = getTempLink(element);
 
                 String link = "https://github.com" + currentLink;
                 System.out.println(link);
-
             }
 
             System.out.println();
