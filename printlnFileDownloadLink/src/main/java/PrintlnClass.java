@@ -64,6 +64,7 @@ public class PrintlnClass {
 
                 if (!currentLink.contains(tempLink)) {
                     System.out.print("\n\n");
+                    System.out.println("---\n");
                     System.out.println("####"+element.text());
                 }
                 tempLink = getTempLink(element);
